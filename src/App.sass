@@ -1,0 +1,397 @@
+
+body 
+    background-color: #090909
+.main
+    padding: 4.2rem 4.2rem 0 4.2rem
+    @media (max-width: 768px) 
+        padding: 3.5rem 1.6rem
+    &-section 
+        display: flex
+        flex-direction: column
+        gap: 1.2rem
+        &-block 
+            border-radius: .4rem   
+            background-color: #0B0E12 
+            padding: 1.6rem 3.2rem 1.6rem 3.2rem
+            overflow: hidden
+            cursor: pointer
+            @media (max-width: 768px)
+                padding: .8rem .8rem
+            &__wrapper
+                display: grid
+                grid-template-columns: 1fr min-content 1fr
+.header 
+    display: inline-flex
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 2rem
+    @media (max-width: 768px) 
+        flex-direction: column
+.main-logo 
+    margin: 0
+    @media (max-width: 768px) 
+        text-align: center
+    a
+        text-decoration: none
+        font-family: 'TacticSansB'
+        font-size: 3.2rem
+        color: #FFFFFF
+.drop-list 
+    color: white
+    list-style: none
+    font-size: 1.6rem
+    position: relative
+    max-width: 17rem
+    padding: 0
+    margin: 0
+    cursor: pointer
+    @media (max-width: 768px) 
+        width: 100%
+        max-width: none
+    li
+        font-family: 'Inter'
+        background-color: #0F1318 
+        padding: 1.2rem
+
+    &-li-active 
+        margin: 0 0 .8rem 0
+        display: inline-flex
+        gap: 1.5rem
+        width: max-content
+        @media (max-width: 768px)
+            width: 100%
+            justify-content: space-between
+        svg 
+            transition: .5s all            
+    &-ul
+        z-index: 1
+        height: 0px
+        display: block
+        overflow: hidden
+        transition: 1s all
+        list-style: none
+        padding: 0
+        position: absolute
+        border-radius: .4rem
+        width: max-content
+        @media (max-width: 768px)
+            width: 100%
+    &-li-active
+        position: relative
+        z-index: 2
+        border-radius: .4rem
+        background-color: #090909
+
+.drop-list-ul__active
+    height: 22rem
+    transition: 1s all
+
+.logo-wrapper
+    display: inline-flex
+    gap: 2.5rem
+    @media (max-width: 768px) 
+        flex-direction: column
+
+// -------------------------------
+.arrow-rotate 
+    svg 
+        transform: rotate(180deg)
+.loader 
+    transform: rotate(360deg)
+    transition: 1s all 
+    animation: spin 2s linear infinite
+@keyframes spin 
+  0% 
+    transform: rotate(0deg)
+  100% 
+    transform: rotate(-360deg)
+
+.btn 
+    width: 20rem
+    display: inline-flex
+    align-items: center
+    height: 5.5rem 
+    background-color: #EB0237
+    color: white
+    border: none
+    font-family: 'Inter'
+    font-size: 1.8rem
+    justify-content: center
+    font-weight: 500
+    gap: 1rem
+    border-radius: .4rem
+    cursor: pointer
+    @media (max-width: 768px)
+        width: 100%
+    &-wrapper 
+        display: inline-flex
+        align-items: center
+        gap: 1.2rem
+
+    span 
+        display: block
+    img 
+        width: 2.6rem 
+        height: auto
+
+
+.main-section-box 
+    display: flex
+    align-items: center
+    gap: 1.5rem
+    @media (max-width: 768px)
+        gap: .6rem
+    img 
+        width: 3.2rem
+        height: 3.2rem
+
+.box-l 
+    justify-content: flex-start
+.box-c 
+    gap: 0
+    display: flex
+    flex-direction: column
+.box-r 
+    justify-content: flex-end
+.box-title 
+    color: white 
+    font-family: 'Inter'
+    font-weight: 500
+    font-size: 1.6rem
+    display: inline-flex
+    align-items: center
+.box-score 
+    color: white
+    font-size: 2rem
+    display: inline-flex
+    justify-content: center
+    margin-bottom: .5rem
+.live-btn 
+    border: none
+    border-radius: .4rem
+    height: 2.7rem
+    text-align: center
+    font-size: 1.2rem
+    color: white
+    font-family: 'Inter'
+    height: 2.7rem
+    font-weight: 500
+    @media (max-width: 768px)
+        width: 7.2rem !important
+.main-section__undertext 
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 3rem
+    cursor: default
+    @media (max-width: 1500px)
+        grid-template-columns: 1fr
+.main-section__undertext-frist 
+    @media (max-width: 1500px)
+        padding: 4.4rem 0 0 0
+.undertext-medium__phone
+    display: none
+    font-size: 1.4rem
+    font-family: 'Inter'
+    color: #313A47
+    margin: 0 auto
+    width: min-content
+    font-weight: 700
+    width: 100%
+    text-align: center
+    grid-template-columns: 1fr min-content 1fr
+    align-items: center
+    gap: 1rem
+    margin: .8rem 0 .8rem 0   
+    &::after
+        content: ''
+        background-color: #13181F
+        height: 2px
+        width: 100%
+        display: flex
+        align-items: center
+        grid-row-start: 1
+    &::before 
+        content: ''
+        background-color: #13181F
+        height: 2px
+        width: 100%
+        display: flex
+        align-items: center
+        grid-row-start: 1
+        grid-column-start: 3
+        
+        
+    @media (max-width: 1500px)
+        display: grid
+.undertext-top-ul 
+    display: inline-flex
+    list-style: none
+    padding: 0
+    gap: .8rem
+    justify-content: space-between
+    width: 100%
+    background-color: #0B0E12
+    @media (max-width: 1500px) 
+        margin-top: 0
+.undertext-top-li 
+    display: inline-grid    
+    grid-template-columns: min-content min-content 1fr
+    list-style: none
+    color: white
+    align-items: center
+    width: 100%
+    font-family: 'Inter'
+    background-color: #101318
+    padding: .8rem 2.4rem
+    border-radius: .4rem
+    @media (max-width: 980px) 
+        grid-template-columns: 1fr min-content min-content 1fr
+    @media (max-width: 480px)
+        padding: .7rem 1.2rem
+        display: flex
+        flex-direction: column
+        img 
+            margin: 0
+    h3 
+        font-size: 1.6rem
+        @media (max-width: 980px) 
+            grid-column-start: 3
+            grid-row-start: 1
+    img 
+        @media (max-width: 768px) 
+            width: 3.2rem
+            height: 3.2rem
+        @media (max-width: 980px)
+            grid-column-start: 2
+            grid-row-start: 1
+
+    // p 
+    //     text-align: end
+    //     font-size: 1.6rem
+    //     span 
+    //         font-size: 1.4rem
+    //         color: rgba(250, 250, 250, 0.4)
+    img 
+        margin-right: .8rem
+.undertext-down
+    background-color: #101318
+    border-radius: .4rem 
+    padding: 1.4rem 0
+    &-ul 
+        color: white
+        width: 100%
+        justify-content: space-around
+        display: inline-flex
+        margin: 0
+        list-style: none
+.undertext-top__text
+    text-align: end
+    font-size: 1.6rem
+    text-align: center
+    @media (max-width: 980px) 
+        grid-row-start: 2
+        grid-column-start: 2
+        grid-column-end: 4
+        justify-content: center
+        display: inline-flex
+        gap: .8rem
+        margin: .6rem 0 0 0
+    span 
+        font-size: 1.4rem
+        color: rgba(250, 250, 250, 0.4)
+// .main-section__undertext 
+//     display: inline-flex
+//     gap: 3.2rem
+//     justify-content: space-between
+.vector 
+    width: 1.3rem !important
+    height: .8rem !important
+    transition: 700ms all
+    @media( max-width: 1500px) 
+        display: none
+    &-mobile 
+        display: none
+        @media (max-width: 1500px)
+            display: block 
+            margin: 1.8rem auto 1.8rem auto
+            width: 1.4rem
+            grid-column-start: 2
+        // padding: 1.8rem 0 1.8rem 0
+
+    
+
+.mainunder-animation-enter 
+    max-height: 0
+    transition: 300ms all 
+
+.mainunder-animation-enter-done 
+    max-height: 15rem
+    transition: 300ms all 
+    @media (max-width: 1500px) 
+        max-height: 39rem 
+    @media (max-width: 480px)
+        max-height: 46rem
+
+.mainunder-animation-enter-active 
+    max-height: 15rem
+    display: grid
+    transition: 300ms all 
+    @media (max-width: 1500px) 
+        max-height: 46rem !important
+
+
+.mainunder-animation-exit 
+    max-height: 0
+    transition: 500ms all 
+    overflow: hidden
+
+.mainunder-animation-exit-active 
+    max-height: 0
+    margin: 0
+    transition: 500ms all 
+// ERROR MESSAGE ----------------------------
+.error-message
+    padding: 0rem 1.7rem
+    display: inline-flex
+    gap: 1rem
+    background-color: #0F1318
+    border-radius: .4rem
+    max-height: 5.6rem
+    height: 100%
+    align-items: center
+    @media (max-width: 900px) 
+        position: fixed
+        top: 2rem
+        right: 2rem
+        z-index: 99
+    h4 
+        margin: 0
+        font-size: 1.8rem
+        font-weight: 400
+        font-family: 'Inter'
+        color: white
+    img
+        height: 2.8rem
+        width: 2.8rem
+.error-anim-enter 
+  opacity: 0
+  transform: translateY(-20px)
+
+
+.error-anim-enter-active 
+  opacity: 1
+  transform: translateY(0)
+  transition: opacity 300ms, transform 300ms
+
+
+.error-anim-exit 
+  opacity: 1
+  transform: translateY(0)
+
+
+.error-anim-exit-active 
+  opacity: 0
+  transform: translateY(-20px)
+  transition: opacity 300ms, transform 300ms
+.btn-utilite
+    height: 4.7rem !important
