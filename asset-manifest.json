@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5b8b120a.css",
+    "main.js": "./static/js/main.b73c6e6c.js",
+    "static/js/453.2838e13c.chunk.js": "./static/js/453.2838e13c.chunk.js",
+    "static/media/Inter-Italic-VariableFont_opsz,wght.ttf": "./static/media/Inter-Italic-VariableFont_opsz,wght.831252f8ba7e1b5b2432.ttf",
+    "static/media/Inter-VariableFont_opsz,wght.ttf": "./static/media/Inter-VariableFont_opsz,wght.e05c5f3d1fa6a3893d84.ttf",
+    "static/media/PTSans-Regular.ttf": "./static/media/PTSans-Regular.77e92507394e2309d837.ttf",
+    "static/media/PTSans-BoldItalic.ttf": "./static/media/PTSans-BoldItalic.9432b29338612af7eca9.ttf",
+    "static/media/tactic-sans-bold.ttf": "./static/media/tactic-sans-bold.71b6e66b03590816c275.ttf",
+    "static/media/cmd-logo.svg": "./static/media/cmd-logo.a93d07f62a9ae4b325299278584981cf.svg",
+    "static/media/loader.svg": "./static/media/loader.444f2c6e17241587bbab9aee06319e34.svg",
+    "static/media/error-icon.svg": "./static/media/error-icon.fe0c438c3a778d59d831ad0e03a1b6c8.svg",
+    "index.html": "./index.html",
+    "static/media/vector.svg": "./static/media/vector.276ba4f523c072e82eb7ccbb86389f9b.svg",
+    "main.5b8b120a.css.map": "./static/css/main.5b8b120a.css.map",
+    "main.b73c6e6c.js.map": "./static/js/main.b73c6e6c.js.map",
+    "453.2838e13c.chunk.js.map": "./static/js/453.2838e13c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b8b120a.css",
+    "static/js/main.b73c6e6c.js"
+  ]
+}
